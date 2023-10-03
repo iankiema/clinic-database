@@ -18,3 +18,22 @@ CREATE TABLE treatments (
 	name VARCHAR
 );
 
+CREATE TABLE invoices (
+	id INTEGER PRIMARY KEY,
+	total_amount DECIMAL,
+	generated_at TIMESTAMP,
+	payed_at TIMESTAMP,
+	medical_history_id INTEGER,
+	FOREIGN KEY (medical_history_id) REFERENCES medical_histories (id)
+);
+
+CREATE TABLE invoice_items (
+	id INTEGER PRIMARY KEY,
+	unit_price DECIMAL,
+	quantity INTEGER,
+	total_price DECIMAL,
+	invoice_id INTEGER,
+	treatment_id INTEGER,
+	FOREIGN KEY (invoice_id) REFERENCES invoices (id),
+	FOREIGN KEY (treatment_id) REFERENCES treatments (id)
+);
