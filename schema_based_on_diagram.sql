@@ -51,3 +51,6 @@ CREATE TABLE medical_history_treatments (
     FOREIGN KEY (medical_history_id) REFERENCES medical_histories(id),
     FOREIGN KEY (treatment_id) REFERENCES treatments(id)
 );
+
+CREATE INDEX idx_medical_history_id_treatments ON medical_history_treatments(medical_history_id);
+CREATE INDEX idx_treatment_id_treatments ON medical_history_treatments(treatment_id);
