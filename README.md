@@ -76,9 +76,9 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```
-git clone https://github.com/ngalamac/vet_clinic.git
+git clone https://github.com/iankiemaa/clinic-databse.git
 
-cd vet_clinic
+cd clinic-databse
 ```
 
 ### Install
@@ -89,7 +89,7 @@ No installation required
 
 ### Usage
 
-To run the project, execute the [SQL commands listed here](https://github.com/ngalamac/vet_clinic/blob/create-animal-tables/queries.sql)
+To run the project, execute the [SQL commands listed here](https://github.com/iankiema/clinic-database/blob/clinic_database/schema_based_on_diagram.sql)
 
 ### Run tests
 
@@ -119,7 +119,7 @@ Deploy this project on any server: localhost, live host, cloud host.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Building a more complex vet clinic database with more tables and data**
+- [ ] **Building a more complex clinic database with more tables and data**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,7 +146,7 @@ I would like to thank the Microverse community.
 ## 📝 License <a name="license"></a>
 
 
-This project is [MIT](./LICENSE.md) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
